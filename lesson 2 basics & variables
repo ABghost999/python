@@ -1,0 +1,156 @@
+# Data types = סוגי מידע
+# 4 datatypes
+
+# INTEGER & FLOAT:
+# Int = מספר שלם
+# float = דצימלי
+num1 = 1  # Whuole number (int)
+num2 = 1.0  # Decimal number (Float)
+num3 = "1"  # text (str)
+# print(type(num1))
+# print(type(num2))
+
+# STRING:
+str1 = "this is what my dad said 'hello dan' "
+str2 = "this is what my dad said \"hello dan\" "
+str3 = 'this is what my dad said "hello dan" '
+# print(str1)
+
+# BOOLEAN:
+# TRUE / FALSE
+num1 = 1  # Int
+num2 = 1.0  # Float
+# print(num1 == num2) # TRUE
+# print(type(num1) == type(num2)) # FALSE
+# boolean
+
+
+# Data Structure
+# LISTS:
+list1 = [1, 4.0, "10", True]
+#   int flaot str  bool
+#         objects
+#   0   1     2    3 ........... (index) index = the number of the object in the list
+# print(list1) # print all the objects in the list
+# print(list1[3]) # print specific object from the list using the index
+# print(type(list1[3])) # print specific obecjt type from the list using index
+
+# DICTIONARIES
+dict1 = {"key1": "1", "key2": 2.0, "key3": 3, "key4": True}
+# str        float       int        bool
+# print(dict1) #Print all dict
+# print(dict1["key1"]) #print specific value of a key
+
+# TUPLE
+list2 = [1, 2, 3]
+# print(list2[1])
+list2[1] = 4
+# print(list2[1])
+
+tup1 = (1, 2, 3)
+# print(tup1)
+# print(tup1[1])
+# tup1[1] = 5
+# print(tup1[1])
+
+# SETS
+set1 = {1, 2, 3, "1", 1}
+# print(set1)
+
+
+# TYPE CASTING
+x = 1  # > int
+# print(type(x)) # > int
+# x = str(x) # > str
+# print(type(x)) # > str
+
+y = "2"  # > str
+y = float(y)
+# print(type(y))
+z = y + x  # > 3
+# print(z)
+
+# text123 + 1 > text1231
+
+
+# int + str = error X
+# float + str = error X
+# int + int = int
+# str + str = str
+# int + float = float
+
+
+# in / not in > boolean
+text1 = "abcdefg"
+# print("1" not in text1) # > bool
+
+# AND / OR / NOT
+x = 5
+y = 10
+# print(not(x!=y and x>5)) # > false
+# true    false
+
+# and = both statements taken into consideration
+# or = only one should be true
+# true + true = true
+# any false = false
+
+# if x > 4 and x == 10:
+#     print("bigger")
+# else:
+#     print(False)
+
+a = bool([]) + 1
+# false/true
+# 0/1 > int + 1
+# print(type(a)) # > int
+# 0 = false, 1... - true
+
+a = (5 + 5 > 10)
+b = 5
+c = 6
+# print(not(a and (b>c or c>b)))
+# False + False  True
+# False | True
+#      False
+
+# not = הופך את התוצאה של הבולינאי
+
+
+# Additional HW (Not mandatory)
+'''
+Create a single dictionary named inventory1 that represents a small 
+store's inventory at a specific moment.
+
+    The dictionary should contain at least 5 key-value pairs.
+    The values must utilize the following data types:
+        A string (for the store name).
+        An integer (for the total number of unique items).
+        A float (for the average item price).
+        A list (to store the names of the top 3 selling items).
+        A tuple (to store the contact number and extension).
+
+    After creation, access and print:
+        The store name.
+        The average item price.
+        The third item in the list of top-selling items (using indexing).
+
+    Bonus:
+    Create another dictionary1 consist of 5 objects.
+    each object is a item with its price. ex: "banana":1.4
+    write code to calculate the avg price of all items and place it in dictionary1 under "avg_item_price".
+    print the phone extension
+'''
+
+inventory2 = {
+    "store_name": "ecom store",
+    "total_items": 10,
+    "avg_item_price": 77.6,
+    "top_3_items": ["banana", "washing machine", "laptop"],
+    "contact": ("+972", "037771111")
+}
+
+#print(inventory2["store_name"])
+#print(inventory2["avg_item_price"])
+#print(inventory2["top_3_items"][2])
+
