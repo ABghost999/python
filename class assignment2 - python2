@@ -1,0 +1,25 @@
+#Class Exercise - 2
+#Write python code to output the following:
+#1. Print the result and the type of 3 plus 3.3
+#1. Print the result of the mod (modulo) of 67 and 6
+#1. Use +
+#,
+#-
+#,%, / , ( ) -each of them at least once to output the number 57.0
+#and assign the result to a variable named “result”.
+#4. Use the same variable name “result” and assign to it the value of result * 2
+#5. Print result & result type.
+#❖ Make sure your Python syntax is correct.
+
+#answer
+num1 = 3
+num2 = 3.3
+print(num1 + num2)
+print(67 % 6 )
+num3 = 100
+result = (100%4) + 120 / 2 - num1
+print(result)
+if result == 57:
+    print(True)
+    result2 = result * 2
+    print(result2)
