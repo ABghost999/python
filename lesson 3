@@ -1,0 +1,43 @@
+
+'''
+print("hello what is your name:")
+name = input("enter name: ")
+print("welcome" + " " +name)
+number = input("enter phone number: ")
+print(type(number))
+number = int(number)
+print(type(number))
+'''
+'''
+1. Create a dictionary called user1 that has two key:value pairs: name, pass.
+2. Accept from user a username and password inputs and update the user dictionary accordingly .
+3. Add one more key:value pair to the dictionary that is the user ID and the value is 1.
+4. Create another dictionary for user2 in the same way you did for user1 (the ID is now 2 etc..).
+5. Create a list containing all users (including username, password and ID for every user).
+6. Print all of the passwords you have in the users list.
+'''
+''''''
+'''
+# 1 ,2,
+username = input("please enter your name: ")
+password = input("please enter your password: ")
+user1 = {"name":"", "pass":""}
+user1["name"] = username
+user1["pass"] = password
+user1["ID"] = 1 #3
+print(user1)
+
+#ID = input("please enter your ID: ")
+
+#3
+username1 = input("please enter your name: ")
+password2 = input("please enter your password: ")
+user2 = {"name":"", "pass":""}
+user2["name"] = username1
+user2["pass"] = password2
+user2["ID"] = 1 #3
+print(user2)
+users = [user1, user2]
+print(users)
+'''
+
