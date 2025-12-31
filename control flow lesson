@@ -1,0 +1,229 @@
+
+# '''
+# intro
+# variables
+# data types - str, int, float, bool
+# data colections - list, dict, tup, set
+# control flow (if statemnent) - true/false
+# '''
+
+# # var1 = "name"
+# # if "n" in var1: # True
+# #     # block of code הזחה = 4רווחים
+# #     print(f"'n' is in {var1} ")
+
+# num1 = 55
+# num2 = 19
+# num3 = 33
+
+
+# if num1 > num2: #no1
+#     print(f'{num1} is greater then {num2}') #X
+#     if num1 > num3: #Nested if
+#         print(f'and also {num1} is bigger then {num3}')
+#         if num1 == num2:
+#             print("this is a third nested if")
+#         elif num3 == num2:
+#             print("this is also a third neted if")
+#     elif num2 > num3:
+#         print(f'{num2} is bigger then {num3}')
+#     else:
+#         print('dsadsadsasa')
+#     '''...'''
+# elif num1 == num2: #no2
+#     print(f'{num1} equal to {num2}')
+#     if num1 > num3: #Nested if
+#         print(f'and also {num1} is bigger then {num3}')
+#     elif num2 > num3:
+#         print(f'{num2} is bigger then {num3}')
+#     else:
+#         print('dsadsadsasa')
+
+# elif num2 > num1 and num2 > num3: #no3
+#     print(f"{num2} is greater then {num1}")
+
+# elif num1 < num2 > num3:
+#     print(f'{num2} is the biggest')
+
+# else: #all the rest options no4
+#     print('program finish...')
+#     if num3 > num2:
+#         print("xyz")
+
+# print("this is ok")
+
+'''
+Class Exercise - 1
+1. A school has following rules for grading system:
+a) Below 25 – F
+b) 25 to 45 – E
+c) 46 to 50 – D
+d) 51 to 60 – C
+e) 61 to 80 – B
+f) Above 80 – A
+Ask user to enter grade and print the corresponding mark.
+
+2. Code a program to create a user database from input (use dictionary username +
+password). Then create a login logic that accepts user if the credentials are True
+and print ‘Welcome’, alert when credentials are wrong.
+'''
+
+students = {
+    'user1' :'Aa1234',
+    'user2' :'Bb1234'
+}
+
+# SIGNUP
+# username_signup = input('pls enter your username to signup > ')
+# pass_signup =  input(f'pls enter your password for user {username_signup} > ')
+
+# students[username_signup] = pass_signup
+# print(students)
+
+2
+# username = input('pls enter your username > ') # user1
+
+# if username in students:
+#     print('Username ok.. ')
+#     password =  input(f'pls enter your password for user {username} > ')
+#     # print(students[username])
+
+#     if students[username] == password:
+#         # Aa1234
+#         print('Logged in successfuly.. ')
+#         print('Pls continue')
+# #         #1
+#         user_grade = int(input(f'Hi {username}, pls enter your grade: ')) # -40, abcd, True, 78.9
+
+#         if 0 < user_grade < 25: #Nested if
+#             print('F')
+#         elif 25 <= user_grade <= 45:
+#             print('E')
+#         elif 46 <= user_grade <= 50:
+#             print('D')
+#         elif 51 <= user_grade <= 60:
+#             print('C')
+#         elif 61 <= user_grade <= 80:
+#             print('B')
+#         elif 81 <= user_grade <= 100:
+#             print('A')
+#         else:
+#             print('Enter a valid grade between 0-100!')
+#     else:
+#         print('password does not match.. pls try again..')
+# else:
+#     print('User not exist.. ')
+
+
+## SHORT HAND IF
+# a = 2
+# b = 330
+
+# ## USUALLY WE WILL DO:
+# if a > b: # CONDITION
+#     print("A") # ACT
+# else: # ALL THE REST
+#     print("B")
+
+# print("A") if a > b       else print("B")
+# # ACT      # CONDITION    # ALL TH REST
+#            # TRUE
+
+
+## TRUE TABLE
+# Test if a is greater than b, AND if c is greater than a
+a = 200
+b = 33
+c = 500
+
+# if a > b and c > a: # TRUE
+#   # 1     &     2
+#   # T           T = TRUE
+#   # F           T = FALSE
+#     print("Both conditions are True")
+
+# Test if a is greater than b, OR if a is greater than c
+# if not(a > b or a > c):
+#  # not(condition) - true > false
+#  #   T   |    F  = TRUE
+#  #  block of code
+#     print("At least one of the conditions is True")
+
+# else:
+#     print("codition is false")
+
+
+'''
+Class Exercise - 2
+Exercise time – 10 Minutes!
+1. Try to understand the result of the following statements:
+a=50
+b=183
+1. True and not False and a>b or b==566 or not False
+2. not b>a+52
+3. False and 1!=1 and a>=8 and a+b != 253 and not True
+2. Simplify the following code using and, or, not keywords:
+If a>10:
+if b>20:
+if not a==50:
+print(“success”)
+'''
+# #1
+# a=50
+# b=183
+
+# # print(True and not False and a>b or b==566 or not False)
+#     #   T  &      T       &  F   |   F      |     T
+
+# #2
+# if a>10:
+#     if b>20:
+#         if not a==50:
+#             print('success')
+
+# print("success") if a>10 and b>20 and not a==50 else print('abcd')
+#                     # T  &    T   &     NOT  T > F
+
+
+
+## PASS STATEMENT
+# fruits = ['mango','strewberry','dragon fruit','banana']
+# # this is summer
+# desired_fruit = input("Which fruit would you like > ")
+# if desired_fruit in fruits:
+#     if desired_fruit == 'mango':
+#         print('mango is 8ils')
+#     elif desired_fruit == 'strewberry':
+#         pass #pass statement
+#     else:
+#         print('come again')
+
+# else:
+#     print("Im sorry I don't have this fruit")
+
+
+'''
+1. create a list name blacklist_ips with IPs (at least 10) 45.148.10.121, 5.187.35.21
+2. Ask the user to insert his IP
+3. Create a logic (control flow) that checks if the IP is blacklisted
+Bonus
+4. create another list named possible_bad_ips with random 5 ips 7.7.8.91... []
+5. Ask the user to insert his IP and check if the IP is in possible_bad_ips
+6. If so, add this possible bad ip to blacklist_ips
+
+15 minutes
+'''
+blacklist_ips = ['1.1.1.1', '2.2.2.2'] # 1
+user_ip = input('pls enter IP to check > ') # 2
+# 3
+if user_ip in blacklist_ips:
+    print(f'IP {user_ip} is in the blacklist.. ')
+else:
+    # 4
+    possible_bad_ips = ['3.3.3.3', '4.4.4.4']
+    if user_ip in possible_bad_ips:
+        blacklist_ips.append(user_ip)
+        print(f'IP {user_ip} added to blackist.. ')
+        print(f'New blacklist: {blacklist_ips}')
+    else:
+        print(f'IP {user_ip} is OK! ')
