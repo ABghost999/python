@@ -1,0 +1,25 @@
+'''
+1. create a list name blacklist_ips with IPs (at least 10) 45.148.10.121, 5.187.35.21
+2. Ask the user to insert his IP
+3. Create a logic (control flow) that checks if the IP is blacklisted
+Bonus
+4. create another list named possible_bad_ips with random 5 ips 7.7.8.91... []
+5. Ask the user to insert his IP and check if the IP is in possible_bad_ips
+6. If so, add this possible bad ip to blacklist_ips
+
+15 minutes
+'''
+
+blackip = ("1.1.1.1, 2.2.2.2, 3.3.3.3, 4.4.4.4, 5.5.5.5, 6.6.6.6, 7.7.7.7, 8.8.8.8, 9.9.9.9, 10.10.10.10")
+maybebadip = ("11.11.11.11, 33.33.33.33,55.55.55.55,66.66.66.66,99.99.99.99")
+userip = input("Please enter you IP : ")
+
+
+if userip in blackip:
+    print("this ip is sus")
+
+elif userip in maybebadip:
+    print("this ip is also banned")
+
+else:
+    print("welcome " + userip)
