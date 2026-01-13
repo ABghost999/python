@@ -1,0 +1,82 @@
+'''
+Class Exercise - 1
+Create a function named hello_name using the correct python syntax. This function asks
+for the user’s name and prints “Hello [name] welcome !”
+Run the program, what is the output? Explain
+Call the function and then print the type of the function using type(name_of_function)
+Add last name to the hello_name( ) function and run the program again.
+'''
+
+'''
+#from classexer2 import newnumber
+
+
+#def hello_name():
+   # name1 = input("what is your name? ")
+   # name2 = input("surname? ")
+
+    #print("Hello " + name1 + " " +name2 + " welcome!")
+
+#hello_name()
+
+#print(type(hello_name))'''
+
+
+
+'''
+Class Exercise -2
+1. Create a function that accepts a number, return the opposite number.
+Example: 1: -1 | 14: -14 | -34: 34 | 0: 0
+2. Create a function that accepts a list of numbers, return the sum of all of the
+positives ones.
+Example: [1,
+-4,7,12] => 1 + 7 + 12 = 20
+3. Create a function that accept a Boolean value and returns a "Yes" string for
+True, or a "No" string for False.'''
+print(1)
+'''def oppnum():
+    number=int(input("enter your number: "))
+    return number * - 1
+
+print("opposite number is: " , oppnum())
+
+'''
+
+'''
+number = input("please enter your number: ")
+    newnumber = number * -1'''
+
+
+print(2)
+#2. Create a function that accepts a list of numbers, return the sum of all of the
+#positives ones.
+#Example: [1,
+#-4,7,12] => 1 + 7 + 12 = 20
+'''
+def sum_positives(numbers):
+    total = 0 # this ensure the sum starts from 0
+    for num in numbers:
+        if num >0:
+            total += num
+    return total
+print(sum_positives([1, 4, -13,20]))
+'''
+
+
+#    nums = input("please enter your numbers separated by commas: ")
+
+'''
+3. create a function that accept a Boolean value and returns a "Yes" string for
+True, or a "No" string for False'''
+
+'''def facts(value):
+    if value == True:
+        return "Yes"
+    else:
+        return "NO!!!"
+print(facts(True))
+print(facts(False))
+'''
+
+
+
