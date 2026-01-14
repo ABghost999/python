@@ -1,0 +1,73 @@
+'''
+Class project 1 –
+“Rock, Paper, Scissors”
+Your first python Project is to create a “Rock, Paper, scissors” game.
+The is a game where the player plays against the computer.
+1. You must use functions to create this game.
+
+2. This program will keep playing until the user chooses to stop.
+
+3. You must use the “random” library in your code.
+
+4. Try to be creative and implement more features to the game and make
+it your own (win counting, playing the best out of 5, allowing 2 players
+to play each other, etc..).
+
+5. If you are stuck, you can use the internet for help but use your own
+coding skills and understand every line you are writing.'''
+
+
+import random
+
+def game1():
+    userwins = 0
+    computerwins = 0
+    options = ["rock", "paper", "scissors"]
+
+    print("Welcome to Game 1")
+
+    while True:
+        userinput = input("\nChoose rock, paper, scissors or q to quit: ").lower()
+        print("You chose: " + userinput)
+
+        if userinput == "q":
+            break
+
+        if userinput not in options:
+            print("Invalid input, please try again.")
+            continue
+
+        computerpick = random.choice(options)
+        print(f"The computer chose: {computerpick}.")
+
+        if userinput == computerpick:
+            print("It's a tie!")
+
+        elif (
+            (userinput == "rock" and computerpick == "scissors") or
+            (userinput == "paper" and computerpick == "rock") or
+            (userinput == "scissors" and computerpick == "paper")
+        ):
+            print("You won!")
+            userwins += 1
+
+        else:
+            print("You lost!")
+            computerwins += 1
+
+        # Print the updated scores after each round
+        print(f"Your score: {userwins} | Computer's score: {computerwins}")
+    if userwins < 3:
+        print("youve won the game")
+    # Final results after quitting
+    print("\nFinal results:")
+    print(f"User total wins: {userwins}")
+    print(f"Computer total wins: {computerwins}")
+    print("Thanks for playing!")
+
+game1()
+
+
+
+
+
