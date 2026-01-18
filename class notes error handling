@@ -1,0 +1,52 @@
+''''
+Home Exercise
+1. Read a file from your Desktop that contains the lyrics of a song. Using Python prints
+the lyrics word by word.
+2. Copy the content of a text file to a newly created text file.
+3. Copy an image using Python.'''
+
+# FIX 1: Put quotes around the name.
+# If your file is named just "lyrics" without .txt, change this to "lyrics"
+filename = "lyrics.txt"
+
+
+def homework():
+    try:
+        # FIX 2: Added 'as file'. This gives the open file a name we can use.
+        with open(filename, 'r') as file:
+
+            content = file.read()
+            words = content.split()
+
+            for word in words:
+                print(word)
+
+    except FileNotFoundError:
+        print(f"Could not find {filename} please try again")
+
+
+#homework()
+
+source_file = "lyrics.txt"      # The file you already have
+new_file = "lyrics_copy.txt"    # The new file you want to create
+
+try:
+    # STEP 1: OPEN ORIGINAL AND READ
+    # We use 'r' for Read mode
+    with open(source_file, 'r') as reader:
+        data = reader.read()  # Save the lyrics into the variable 'data'
+
+    # STEP 2: OPEN NEW FILE AND WRITE
+    # We use 'w' for Write mode (this creates the file)
+    with open(new_file, 'w') as writer:
+        writer.write(data)    # Write the 'data' we saved earlier
+
+    print(f"Success! Copied everything from {source_file} to {new_file}")
+
+except FileNotFoundError:
+    print(f"Error: Could not find {source_file}. Make sure the name is correct.")
+
+
+#3. Copy an image using Python
+
+# we will use binary
